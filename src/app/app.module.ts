@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { LightgalleryModule } from 'lightgallery/angular';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 // import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -56,7 +58,8 @@ import { SectionGalleryComponent } from './components/section-gallery/section-ga
     BrowserModule,
     AppRoutingModule,
     LightgalleryModule,
-    // FormsModule
+    CommonModule, 
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

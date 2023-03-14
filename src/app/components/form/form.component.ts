@@ -1,36 +1,36 @@
-import { Component, ViewChild, OnInit } from '@angular/core';
-// import { NgForm } from '@angular/forms';
+import { Component, ViewChild } from '@angular/core';
+import { clippingParents } from '@popperjs/core';
+
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
-  styleUrls: ['./form.component.scss']
+  styleUrls: ['./form.component.css'],
 })
 export class FormComponent {
-
+  title = 'Simple contact form';
   contactForm = {
-    name: 'Anonym',
+    name: '',
     email: '',
-    agreement: false,
-    contents: {
-      topic: '',
-      message: '',
-    }
+    message: '',
+  };
+
+  // @ViewChild('itemForm', {
+  //   read: NgForm,
+  //   static: true,
+  // })
+  // itemForm: NgForm;
+  submitted = false;
+
+  onSubmit() {
+    this.submitted = true;
   }
 
-  @ViewChild('contactFormRef', {
-    read: NgForm, static: true
-  })
-  
-  contactFormRef: NgForm;
+  information = 'Thank you the form has been sent';
+  IsmodelShow = false;
 
-  sendMessage(contactForm: NgForm) {
-    console.log(contactForm.value)
-  }
-
-  resetForm() {
-    this.contactFormRef.reset(
-      this.contactForm
-    )
+  closeModal() {
+    this.IsmodelShow = true;
   }
 }
