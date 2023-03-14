@@ -1,0 +1,70 @@
+// ścieżka do plików img
+@function image-url($name) {
+    $imagesPath: "../../images/" !default;
+    @return url(#{$imagesPath}#{$name});
+  }
+  
+  @mixin image($url-image) {
+    background-image: image-url($url-image);
+  }
+  
+  @mixin background-properties() {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  } 
+  
+  // images 
+  @mixin background-image($name-img) {
+    @include media-breakpoint-down(sm) {
+        @include image("#{$name-img}-small.jpg");
+    }
+  
+    @include media-breakpoint-between(sm, md) {
+        @include image('#{$name-img}-medium.jpg');
+    }
+  
+    @include media-breakpoint-between(md, xl) {
+        @include image('#{$name-img}-large.jpg');
+    }
+  
+    @include media-breakpoint-up(xl) {
+        @include image('#{$name-img}.jpg');
+    }
+  }
+
+// animacja do dropdown list
+@-webkit-keyframes dropdownMenu {
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes dropdownMenu {
+
+    0% {
+        opacity: 0;
+    }
+
+    75% {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}

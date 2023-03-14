@@ -1,0 +1,57 @@
+<div class="header__top secondary">
+    <div class="container-fluid px-5">
+        <app-contact-details position="header"></app-contact-details>
+    </div>
+</div>
+<nav class="navbar navbar-expand-md primary" data-fixed-element="">
+    <div class="container-fluid d-flex justify-content-md-end flex-column flex-md-row py-3 py-md-0 px-lg-5">
+        <a class="navbar-brand page__figure" routerLink="/">
+            <img src="assets/images/logo.png" alt="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="navbarNav" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar__list">
+            <div id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" routerLink="/home" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:true}">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/about" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact:true }">
+                            O nas
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown__toggle">
+                        <a class="nav-link" routerLink="/offer" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact:true }">
+                            Oferta
+                        </a>
+                        <!-- <i class="fas fa-arrow-circle-down dropdown__toggle--icon d-md-none d-inline"></i>
+                        <ul class="dropdown__list" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a routerLink="/offer-1">Oferta 1</a>
+                            </li>
+                            <li>
+                                <a routerLink="/offer-2">Oferta 2</a>
+                            </li>
+                            <li class="pb-0">
+                                <a routerLink="/offer-3">Oferta 3</a>
+                            </li>
+                        </ul> -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/gallery" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact:true }">
+                            Galeria
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" routerLink="/contact" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact:true }">
+                            Kontakt
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <app-social-list position="navbar"></app-social-list>
+        </div>
+    </div>
+</nav>

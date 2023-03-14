@@ -1,0 +1,14 @@
+.subbaner {
+    @include background-image('subbaner');
+    @include background-properties;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: $white;
+    height: 31vw;
+
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 4rem;
+    }
+}

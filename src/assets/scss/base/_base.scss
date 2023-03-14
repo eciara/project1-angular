@@ -1,0 +1,134 @@
+
+@import './boostrap', './mixins', './varables';
+
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    @media (max-width: 576.98px) {
+        text-align: center;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+p { 
+    margin-bottom: 0;
+    line-height: 1.5;
+
+    @media (min-width: 400.98px) {
+        text-align: justify;
+        text-align-last: center;
+    }
+}
+
+
+main {
+    overflow-x: hidden;
+}
+
+.page {
+    &__figure {
+        img {
+            @include media-breakpoint-up(xl) {
+                width: 6rem;
+            }
+            @include media-breakpoint-down(xl) {
+                width: 4.5rem;
+            }       
+        }
+    }
+}
+
+.primary {
+    background-color: $color-primary;
+}
+
+.light {
+    background-color: $color-light;
+}
+
+.error-page {
+    &__heading {
+        font-size: 4rem;
+        font-weight: bold;
+        color: $color-primary;
+    }
+}
+
+.row  {
+
+    @include media-breakpoint-up(md) {
+        .col-md-6 {
+            width: 50%;
+        }
+        .col-md-4 {
+            width: 33.333%;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        .col-lg-8 {
+            width: 66.66666667%;
+        }
+        .col-lg-7 {
+            width: 58.33333333%;
+        }
+        .col-lg-6 {
+            width: 50%;
+        }
+        .col-lg-5 {
+            width: 41.66666667%;
+        }
+        .col-lg-4 {
+            width: 33.33333333%;
+        }
+        .col-lg-3 {
+            width: 25%;
+        }
+        .col-lg-2 {
+            width: 16.66666667%;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        .col.xl-8 {
+            width: 66.66666667%;
+        }
+        .col-xl-4{
+            width: 33.33333333%;
+        }
+        .col-xl-5 {
+            width: 41.66666667%;
+        }
+        .col-xl-4 {
+            width: 33.33333333%;
+        }
+        .col-xl-3 {
+            width: 25%;
+        }
+    }
+}

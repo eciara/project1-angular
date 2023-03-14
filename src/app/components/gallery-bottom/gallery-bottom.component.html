@@ -1,0 +1,14 @@
+<section class="gallery--bottom">
+    <div class="container-fluid px-0">
+        <div class="row gx-0">
+            <div class="col-sm gallery__item" *ngFor="let image of gallery; index as i">
+                <div class="gallery__image">
+                    <img loading="lazy" [src]="image.src">
+                    <div class="gallery__overlay">
+                        <a routerLink="/gallery">Więcej</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
