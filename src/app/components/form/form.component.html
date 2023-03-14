@@ -1,7 +1,6 @@
 <form #itemForm="ngForm" (ngSubmit)="onSubmit()" class="form">
     <div class="container">
       <div class="row">
-        <h2 class="form__title">{{ title }}</h2>
         <div class="col-12 form-group">
           <label for="name" class="form-label">Name</label>
           <input
@@ -53,7 +52,7 @@
         <div class="d-flex justify-content-end">
           <button
             type="submit"
-            class="btn btn-primary"
+            class="btn btn-primary btn--secondary"
             [disabled]="!itemForm.form.valid"
           >
             Submit

@@ -9,17 +9,16 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./form.component.css'],
 })
 export class FormComponent {
-  title = 'Simple contact form';
   contactForm = {
     name: '',
     email: '',
     message: '',
   };
 
-  // @ViewChild('itemForm', {
-  //   read: NgForm,
-  //   static: true,
-  // })
+  @ViewChild('itemForm', {
+    read: NgForm,
+    static: true,
+  })
   // itemForm: NgForm;
   submitted = false;
 
@@ -28,7 +27,7 @@ export class FormComponent {
   }
 
   information = 'Thank you the form has been sent';
-  IsmodelShow = false;
+  IsmodelShow = true;
 
   closeModal() {
     this.IsmodelShow = true;

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { LightgalleryModule } from 'lightgallery/angular';
 import { CommonModule } from '@angular/common';
@@ -27,7 +27,7 @@ import { SocialListComponent } from './components/social-list/social-list.compon
 import { ContactDetailsComponent } from './components/contact-details/contact-details.component';
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { SectionGalleryComponent } from './components/section-gallery/section-gallery.component';
-// import { FormComponent } from './components/form/form.component';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
@@ -52,8 +52,9 @@ import { SectionGalleryComponent } from './components/section-gallery/section-ga
     ContactDetailsComponent,
     AccordionComponent,
     SectionGalleryComponent,
-    // FormComponent,
+    FormComponent,
   ],
+  schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -66,4 +67,6 @@ import { SectionGalleryComponent } from './components/section-gallery/section-ga
 })
 
 
-export class AppModule { }
+export class AppModule { 
+
+}
