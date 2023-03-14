@@ -1,0 +1,52 @@
+.accordion {
+    @include media-breakpoint-up(xl) {
+        margin-top: 4rem;
+    }
+
+    > * + * {
+        margin-top: 1.5rem;
+    }
+
+    .accordion-header,
+    .accordion-collapse {
+        border: 1px solid $color-primary;
+    }
+        
+    .accordion-button {
+        // font-weight: 600;
+        font-size: 1.15rem;
+            
+        &:not(.collapsed) {
+            background-color: rgba($color-secondary, .25);
+            box-shadow:  0 0 0 1px rgba(181, 163, 153, .75);
+        }
+
+        &:focus {
+            color: $color-base;
+            box-shadow: none;
+            border: 0;
+        }
+    }
+        
+    .accordion-body {
+        text-align-last: left;
+    }
+
+    .accordion-collapse {
+        border-top: 0;
+    }
+}
+
+.collapse {
+    transition: all .35s ease-in-out;
+
+    &:not(.show) {
+        display: none;
+    }
+}
+
+.collapsing {
+    height:0;
+    overflow:hidden;
+    transition:height .35s ease;
+}

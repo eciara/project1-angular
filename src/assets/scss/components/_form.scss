@@ -1,0 +1,43 @@
+.form {
+    label {
+        display: block;
+        margin-bottom: 0.25rem;
+    }
+
+    input,
+    textarea {
+        width: 100%;
+    }
+
+    &__wrap {
+        margin-bottom: 1rem;
+    }
+
+    #important-contact {
+        display: none;
+    }
+
+    &__important {
+        visibility: hidden;
+        height: 0;
+        margin-top: 0;
+    }
+
+    &__resp {
+        padding-left: 1rem;
+    }
+
+    .form-control.is-invalid {
+        &:focus {
+            box-shadow: none;
+            border: 1px solid $color-secondary;
+        }
+    }
+
+   
+
+    &__submit {
+        display: flex;
+        align-items: flex-start;
+    }
+}

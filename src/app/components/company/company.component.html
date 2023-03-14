@@ -1,0 +1,18 @@
+<section class="company">
+    <div class="container-fluid">
+        <div class="row company__body" 
+            [ngClass]="{'justify-content-end' : direction == 'end'}">
+            <div class="col-lg-4 col-sm-5 px-0 company__figure"
+                [ngClass]="{'order-sm-2' : order == 'next'}">
+                <ng-content select="image"></ng-content>
+            </div>
+            <div select="aside" class="col-lg-8 col-sm-7 company__copy" 
+                [ngClass]="{
+                    'company__copy--left' : position == 'left',
+                    'company__copy--right' : position == 'right'
+                }">
+                <ng-content></ng-content>
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,0 +1,32 @@
+
+<app-baner class="baner"></app-baner>
+
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 section__body">
+                <h1 class="section__heading text-center">{{ heading }}</h1>
+                <p class="section__copy">{{ description }}</p>
+            </div>
+        </div>
+        <app-card></app-card>
+    </div>
+</section>
+
+<app-company position="right">
+    <app-section-images ngProjectAs="image" [image]="'assets/images/company-1.png'" alt="lorem" class="ps-0"></app-section-images>    
+    <ng-container ngProjectAs="aside" class="company__copy--right">
+        <h2 class="section__heading">{{ heading }}</h2>
+        <p>{{ description }}</p>
+    </ng-container>
+</app-company>
+
+<app-company direction="end" position="left" order="next">
+    <div ngProjectAs="aside">
+        <h2 class="section__heading">{{ heading }}</h2>
+        <p>{{ description }}</p>
+    </div>
+    <app-section-images ngProjectAs="image" [image]="'assets/images/company-2.png'" alt="lorem"></app-section-images>
+</app-company>
+
+<app-gallery-bottom></app-gallery-bottom>

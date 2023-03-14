@@ -1,0 +1,18 @@
+<ul [ngClass]="{
+        'header__list list list--header' : position == 'header',
+        'footer__list list--footer' : position == 'footer'
+    }">
+    <li>
+        <i class="icon--contact fas fa-map-marker-alt"></i>adres:
+        <span class="list__break">{{ companyStreet }}</span> 
+        <span class="list__break">{{ companyCity }}</span>
+    </li>
+    <li>
+        <i class="icon--contact fas fa-phone-square-alt"></i>
+        tel: <a href="tel:">{{ campanyPhone }}</a>
+    </li>
+    <li>
+        <i class="icon--contact fas fa-envelope-square"></i>
+        e-mail: <a href="mailto:">{{ campanyEmail }}</a>
+    </li>
+</ul>

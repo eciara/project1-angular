@@ -1,0 +1,10 @@
+<div class="card row">
+    <div class="col-md-4 card__box" *ngFor="let card of cards">
+        <div class="card__icon">
+            <i class="fa-solid" [class]="card.icon"></i>
+        </div>
+        <p class="card__copy">
+            {{ card.desc }}
+        </p>
+    </div>
+</div>

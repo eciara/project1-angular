@@ -1,0 +1,12 @@
+<ul class="list list--social"
+    [ngClass]="{
+        'navbar__social--list' : position == 'navbar', 
+        'contact__social' : position == 'footer'
+    }">
+    <li *ngFor="let profile of listSocial; index as i; let last = last;"
+        [ngClass]="{'pe-0':last}">
+        <a [href]="profile.link" rel="nofollow" target="_blank">
+            <i class="icon icon--social" [class]="profile.icon"></i>
+        </a>
+    </li>
+</ul>

@@ -1,0 +1,72 @@
+.company {
+
+    &__body {
+        display: flex;
+        padding-top: 0;
+        align-items: center;
+        @include media-breakpoint-between(md, lg) {
+            padding-top: 3rem;
+
+        }
+        @include media-breakpoint-between(lg, xl) {
+            padding-top: 5rem;
+        }
+
+        &--secondary {
+            @media (min-width: 801px) and (max-width: 991.99px) {
+                margin-top: 3rem;
+            }
+        }
+    }
+
+    &__copy {
+
+        @media (max-width: 800px) {
+            display: flex;
+            flex-direction: column;
+            order: 2;
+            max-width: 90%;
+            margin: 0 auto;
+        }
+
+       @include media-breakpoint-up(xl) {
+        padding-inline: 5rem;
+       }
+        
+        // &--left {
+
+        //     @include media-breakpoint-up(xl) {
+        //         padding-left: 16%;
+        //     }
+        // }
+
+        // &--right {
+        //    @include media-breakpoint-up(xl) {
+        //         padding-right: 16%;
+        //    }
+        // }
+    }
+
+    &__figure {
+        margin-top: -2rem;
+
+        @media (max-width: 800px) {
+            display: flex;
+            order: 1;
+        }
+        
+        @media (min-width: 768px) {
+             margin-top: -7rem;
+        }
+   
+        @include media-breakpoint-up(xl) {
+            margin-top: -8rem;
+        }
+
+        img {
+            @include media-breakpoint-up(xxl) {
+                width: 100%;
+            }
+        }
+    }
+}

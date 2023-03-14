@@ -1,0 +1,26 @@
+.header {
+    overflow-x: hidden;
+    @include media-breakpoint-up(xl) {
+        margin-bottom: 5rem;
+    }
+
+    &__top {
+        background-color: $color-secondary;
+        color: $white;
+
+        @include media-breakpoint-up(lg) {
+            padding-block: 1.5rem;
+        }
+    }
+
+    &__social {
+        @include media-breakpoint-down(md) {
+            padding-top: 2rem;
+        }
+    }
+    &__list {
+        a {
+            padding-left: 3px;
+        }
+    }
+}

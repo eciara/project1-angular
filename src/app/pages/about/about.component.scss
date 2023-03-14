@@ -1,0 +1,13 @@
+:host ::ng-deep .card {
+    flex-direction: column;
+    margin-top: 0.25rem;
+
+    > * + * {
+        margin-top: 3rem;
+    }
+}
+
+:host ::ng-deep .card__box {
+    flex: 0 0 auto;
+    width: 100%;
+}

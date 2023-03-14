@@ -1,0 +1,36 @@
+.section {
+
+    &__heading {
+        position: relative;
+        font-family: $font-family-heading;
+        font-size: 4rem;
+        text-align: center;
+        color: $color-heading;
+        padding-bottom: .25rem;
+        margin-bottom: 2rem;
+
+        &:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            height: 2px;
+            width: 60%;
+            background-color: currentColor;
+
+            @include media-breakpoint-up(lg) {
+                width: calc(45% - 3vw);
+            }
+        }
+
+      
+
+        @include media-breakpoint-up(xl) {
+            margin-bottom: 3rem;  
+        }
+        @include media-breakpoint-between(md, xl) {
+            margin-bottom: 2.5rem;  
+        }
+    }
+}

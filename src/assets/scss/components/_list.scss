@@ -1,0 +1,19 @@
+.list {
+    display: flex;
+    align-items: center;
+
+    &--header {
+        justify-content: flex-end;
+        gap: 1.5rem;
+        font-size: .95rem;
+
+        li {
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &--social {
+        gap: 1rem;
+    }
+}

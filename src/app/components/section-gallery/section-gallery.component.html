@@ -1,0 +1,12 @@
+<section class="gallery">
+    <div class="container">
+        <lightgallery [settings]="settings" class="row gy-3 gx-sm-3">
+            <a [attr.href]="image.src" *ngFor="let image of images" class="col-xl-4 col-sm-6 ">
+                <div class="gallery__image">
+                    <img loading="lazy" [attr.src]="image.thumbs" alt="galeria">
+                    <div class="gallery__overlay"></div>
+                </div>
+            </a>
+        </lightgallery>
+    </div>
+</section>
