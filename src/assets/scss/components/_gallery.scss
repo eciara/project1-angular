@@ -1,16 +1,16 @@
 .gallery {
-    padding: 2rem 0 4rem;   
+    padding: 2rem 0 4rem;
 
     @include media-breakpoint-up(xl) {
         margin-top: 4rem;
     }
 
     @include media-breakpoint-up(lg) {
-        padding: 1rem 0 5rem;   
+        padding: 1rem 0 5rem;
     }
 
     @include media-breakpoint-up(xl) {
-        padding: 0rem 0 5rem; 
+        padding: 0rem 0 5rem;
     }
 
     &--bottom {
@@ -35,18 +35,22 @@
             position: relative;
             left: 0;
         }
+
         &:hover {
             img {
                 transition: scale(1.05);
             }
+
             .gallery__overlay {
                 opacity: 1;
-            } 
+            }
         }
+
         &--bottom {
             box-shadow: none;
         }
     }
+
     &__overlay {
         position: absolute;
         width: 100%;
@@ -57,6 +61,7 @@
         opacity: 0;
         cursor: pointer;
         transition: all .4s linear;
+
         a {
             display: flex;
             justify-content: center;
@@ -71,5 +76,9 @@
             font-size: 2.5rem;
             z-index: 11;
         }
+    }
+
+    .lg-components {
+        display: none;
     }
 }

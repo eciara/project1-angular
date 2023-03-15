@@ -1,14 +1,15 @@
 .icon {
-    transition: color .35s ease-in;
+    transition: color .15s ease-in;
 
     &--contact {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         margin-right: .4rem;
     }
 
     &--social {
         color: $white;
         font-size: 1.75rem;
+
         &:hover {
             color: $color-base;
         }

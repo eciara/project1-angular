@@ -25,4 +25,13 @@
     &--secondary {
         background-color: $color-secondary;
     }
+
+    &--footer {
+        background-color: transparent;
+        border: 1px solid $white;
+        &:hover {
+            background-color: $color-base;
+            border-color: $color-base;
+        }
+    }
 }

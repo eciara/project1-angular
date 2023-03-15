@@ -1,10 +1,12 @@
-<ul [ngClass]="{
-        'header__list list list--header' : position == 'header',
+<ul class="list" 
+    [ngClass]="{
+        'header__list list--header' : position == 'header',
+        'contact__list list--contact list--primary' : position == 'contact',
         'footer__list list--footer' : position == 'footer'
     }">
     <li>
         <i class="icon--contact fas fa-map-marker-alt"></i>adres:
-        <span class="list__break">{{ companyStreet }}</span> 
+        <span class="list__break">{{ companyStreet }},</span> 
         <span class="list__break">{{ companyCity }}</span>
     </li>
     <li>

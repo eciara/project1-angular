@@ -1,28 +1,28 @@
 <footer class="footer primary">
-    <div class="container">
-        <div class="row footer__aside">
-            <div class="col-lg-2 mt-0">
-                <a class="footer__figure page__figure" routerLink="/">
-                    <img src="assets/images/logo.png" alt="logo">
-                </a>
-            </div>
-            <div class="col-xl-3 col-lg-4">
-                <app-contact-details position="footer"></app-contact-details>
-            </div>
-            <div class="col-xl-5 col-lg-4 ps-xl-5">
-                <p class="footer__copy">Skontaktuj się z nami</p>
-                <app-social-list position="footer"></app-social-list>
-            </div>
-            <div class="col-lg-2 footer__actions">
-                <a routerLink="/contact" class="btn btn--primary">
-                    kontakt
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="footer__copyrights text-center secondary">
-        © {{ date | date: 'yyyy'}} {{ footer }}
-    </div>
+	<div class="container">
+		<div class="row footer__aside">
+			<div class="col-lg-2 mt-0">
+				<a class="footer__figure page__figure" routerLink="/">
+					<img src="assets/images/logo.png" alt="logo" />
+				</a>
+			</div>
+			<div class="col-xl-3 col-lg-4">
+				<app-contact-details position="footer"></app-contact-details>
+			</div>
+			<div class="col-xl-5 col-lg-4 ps-xl-5">
+				<p class="footer__copy">Skontaktuj się z nami</p>
+				<app-social-list position="footer"></app-social-list>
+			</div>
+			<div class="col-lg-2 footer__actions">
+				<a routerLink="/contact" class="btn btn--primary btn--footer">
+					kontakt
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="footer__copyrights text-center secondary">
+		© {{ date | date : "yyyy" }} {{ footer }}
+	</div>
 </footer>
 
 <!-- <div id="scroll-top">

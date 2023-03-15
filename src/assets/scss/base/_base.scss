@@ -1,4 +1,3 @@
-
 @import './boostrap', './mixins', './varables';
 
 
@@ -17,6 +16,7 @@ h4 {
     @media (max-width: 576.98px) {
         text-align: center;
     }
+
 }
 
 img {
@@ -27,6 +27,10 @@ img {
 a {
     color: inherit;
     text-decoration: none;
+
+    &:hover {
+        color: $color-base;
+    }
 }
 
 ul {
@@ -35,7 +39,7 @@ ul {
     margin: 0;
 }
 
-p { 
+p {
     margin-bottom: 0;
     line-height: 1.5;
 
@@ -56,9 +60,10 @@ main {
             @include media-breakpoint-up(xl) {
                 width: 6rem;
             }
+
             @include media-breakpoint-down(xl) {
                 width: 4.5rem;
-            }       
+            }
         }
     }
 }
@@ -79,12 +84,13 @@ main {
     }
 }
 
-.row  {
+.row {
 
     @include media-breakpoint-up(md) {
         .col-md-6 {
             width: 50%;
         }
+
         .col-md-4 {
             width: 33.333%;
         }
@@ -94,21 +100,27 @@ main {
         .col-lg-8 {
             width: 66.66666667%;
         }
+
         .col-lg-7 {
             width: 58.33333333%;
         }
+
         .col-lg-6 {
             width: 50%;
         }
+
         .col-lg-5 {
             width: 41.66666667%;
         }
+
         .col-lg-4 {
             width: 33.33333333%;
         }
+
         .col-lg-3 {
             width: 25%;
         }
+
         .col-lg-2 {
             width: 16.66666667%;
         }
@@ -118,15 +130,19 @@ main {
         .col.xl-8 {
             width: 66.66666667%;
         }
-        .col-xl-4{
-            width: 33.33333333%;
-        }
-        .col-xl-5 {
-            width: 41.66666667%;
-        }
+
         .col-xl-4 {
             width: 33.33333333%;
         }
+
+        .col-xl-5 {
+            width: 41.66666667%;
+        }
+
+        .col-xl-4 {
+            width: 33.33333333%;
+        }
+
         .col-xl-3 {
             width: 25%;
         }
