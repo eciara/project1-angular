@@ -28,6 +28,7 @@ import { ContactDetailsComponent } from './components/contact-details/contact-de
 import { AccordionComponent } from './components/accordion/accordion.component';
 import { SectionGalleryComponent } from './components/section-gallery/section-gallery.component';
 import { FormComponent } from './components/form/form.component';
+import { ClickDirective } from './directive/click.directive';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { FormComponent } from './components/form/form.component';
     AccordionComponent,
     SectionGalleryComponent,
     FormComponent,
+    ClickDirective,
   ],
   schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
   imports: [

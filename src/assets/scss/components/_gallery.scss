@@ -14,10 +14,13 @@
     }
 
     &--bottom {
-        margin: 3rem 0 .5rem;
+        
+        @include media-breakpoint-up(md) {
+            margin: 3rem 0 .5rem;
+        }
 
-        @include media-breakpoint-up(lg) {
-            margin: 5rem 0 .5rem;
+        @include media-breakpoint-down(md) {
+            margin: 2.5rem 0 .5rem;
         }
 
         img {

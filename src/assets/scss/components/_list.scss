@@ -34,7 +34,25 @@
         }
     }
 
+    &--footer {
+        li {
+            @include media-breakpoint-down(md) {
+                margin-top: .25rem;
+            }
+        }
+    }
+
     &--social {
-        gap: 1rem;
+
+        @include media-breakpoint-up(md) {
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            justify-content: center;
+            margin-top: 1.5rem;
+            gap: 1.5rem;
+        }
     }
 }

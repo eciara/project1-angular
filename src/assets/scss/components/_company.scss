@@ -21,30 +21,28 @@
 
     &__copy {
 
-        @media (max-width: 800px) {
+        @include media-breakpoint-down(md) {
             display: flex;
             flex-direction: column;
             order: 2;
-            max-width: 90%;
-            margin: 0 auto;
         }
 
        @include media-breakpoint-up(xl) {
         padding-inline: 5rem;
        }
         
-        // &--left {
+        &--left {
 
-        //     @include media-breakpoint-up(xl) {
-        //         padding-left: 16%;
-        //     }
-        // }
+            @include media-breakpoint-down(md) {
+                padding-top: 2rem;
+            }
+        }
 
-        // &--right {
-        //    @include media-breakpoint-up(xl) {
-        //         padding-right: 16%;
-        //    }
-        // }
+        &--right {
+           @include media-breakpoint-down(md) {
+                padding-block: 2rem 3rem;
+           }
+        }
     }
 
     &__figure {

@@ -4,12 +4,12 @@
     </div>
 </div>
 <nav class="navbar navbar-expand-md primary" data-fixed-element="">
-    <div class="container-fluid d-flex justify-content-md-end flex-column flex-md-row py-3 py-md-0 px-lg-5">
+    <div class="container-fluid d-flex justify-content-md-end flex-column flex-md-row px-lg-5">
         <a class="navbar-brand page__figure" routerLink="/">
             <img src="assets/images/logo.png" alt="logo">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="navbarNav" data-bs-target="#navbarNav">
-            <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-bs-toggle="navbarNav" data-bs-target="#navbarNav" >
+            <span class="navbar-toggler-icon" (click)="showMenu($event)"></span>
         </button>
         <div class="navbar__list">
             <div id="navbarNav">

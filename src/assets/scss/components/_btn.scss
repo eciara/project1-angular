@@ -14,10 +14,6 @@
         color: $white;
     }
 
-    @include media-breakpoint-down(xl) {
-        font-size: $fs-btn-small;
-    }
-
     &--primary {
         background-color: $color-primary;
     }

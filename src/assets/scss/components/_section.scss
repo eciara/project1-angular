@@ -3,11 +3,9 @@
     &__heading {
         position: relative;
         font-family: $font-family-heading;
-        font-size: 4rem;
-        text-align: center;
+        font-size: $fs-heading;
         color: $color-heading;
         padding-bottom: .25rem;
-        margin-bottom: 2rem;
 
         &:after {
             content: '';
@@ -24,13 +22,11 @@
             }
         }
 
-      
-
-        @include media-breakpoint-up(xl) {
+        @include media-breakpoint-up(md) {
             margin-bottom: 3rem;  
         }
-        @include media-breakpoint-between(md, xl) {
-            margin-bottom: 2.5rem;  
+        @include media-breakpoint-down(md) {
+            margin-bottom: 1.5rem;  
         }
     }
 }

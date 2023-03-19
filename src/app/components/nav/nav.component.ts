@@ -5,6 +5,9 @@ import { Component } from '@angular/core';
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.scss']
 })
-export class NavComponent {;
+export class NavComponent {
 
+  showMenu($event : any) {
+    $event.target.parentNode.nextSibling.classList.toggle('fadeIn');
+  }
 }

@@ -3,22 +3,28 @@
     @include background-properties;
     background-position: bottom;
 
-    @include media-breakpoint-up(xl) {
+    @include media-breakpoint-up(md) {
         margin-bottom: 4rem;
     }
+
+    @include media-breakpoint-down(md) {
+        margin-bottom: 2.5rem;
+    }
+
 
     &__heading {
         display: block;
         font-family: $font-family-heading;
-        font-size: $fs-baner-heading;
         text-align: center;
-        text-shadow: 1px 1px 1px $color-base;
+        // text-shadow: 1px 1px 1px $color-base;
         line-height: 1;
-        color: $white;
+        // color: $white;
+        color: #7a5d5d;
         margin-bottom: 1.5rem;
 
-        @include media-breakpoint-up(xl) {
-            // padding-top: 15rem;
+        @include media-breakpoint-down(md) {
+            font-size: $fs-baner-mobile;
+            padding-top: 2.25rem;
         }
     }
 
@@ -33,6 +39,10 @@
 
         @include media-breakpoint-up(xxl) {
             padding-inline: 4rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            margin-bottom: 1.5rem;
         }
     }
 

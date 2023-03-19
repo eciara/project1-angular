@@ -13,7 +13,7 @@
     &__aside {
         display: flex;
         align-items: center;
-        padding: 2rem 0;
+        padding-block: 2.5rem;
 
         @include media-breakpoint-down(lg) {
             text-align: center;
@@ -33,26 +33,22 @@
         text-align: left;
         text-align-last: left;
         text-transform: uppercase;
-        font-size: $fs-footer-small;
 
         @include media-breakpoint-down(lg) {
             text-align: center;
             text-align-last: center; 
         }
-        @include media-breakpoint-up(xl) {    
-            font-size: $fs-footer;
-        }
+
     }
 
     &__copyrights {
-        font-size: $fs-copyrights;
-        padding: .75rem 0;
+        padding-bottom: .75rem;
     }
 
     &__actions {
 
         @include media-breakpoint-down(lg) {
-            margin-top: 1.75rem;
+            margin-top: 2.5rem;
         }
 
         @include media-breakpoint-between(lg, xl)  {

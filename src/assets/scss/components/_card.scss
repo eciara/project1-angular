@@ -1,8 +1,17 @@
 .card {
-    margin-top: 3rem;
 
     @include media-breakpoint-up(xl) {
         --bs-gutter-x: 8rem;
+    }
+
+    @include media-breakpoint-up(md) {
+        margin-top: 3rem;
+    }
+
+    &__box {
+        @include media-breakpoint-down(md) {
+            margin-top: 1.5rem;
+        }
     }
 
     &__icon {

@@ -8,26 +8,21 @@
     &__icon {
         display: flex;
         justify-content: center;
-        padding: 2rem 0;
+
+        @include media-breakpoint-down(md) {
+            padding-block: 2rem;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding-block: 1.5rem;
+        }
     }
 
     &__copy {
-        font-size: $fs-about-copy;
 
         @include media-breakpoint-down(lg) {
             text-align: center;
             text-align-last: center;
-        }
-
-        @media (min-width: 801px) {
-            font-size: $small-font-size;
-        }
-    }
-
-    .col-md-4 {
-        @media (max-width: 800px) {
-            flex: 0 0 100%;
-            width: 100%;
         }
     }
 }
