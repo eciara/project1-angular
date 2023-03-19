@@ -9,5 +9,7 @@ export class NavComponent {
 
   showMenu($event : any) {
     $event.target.parentNode.nextSibling.classList.toggle('fadeIn');
+
+    
   }
 }
